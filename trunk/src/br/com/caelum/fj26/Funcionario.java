@@ -15,7 +15,7 @@ import javax.persistence.Id;
 public class Funcionario {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.SEQUENCE)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	private String nome;
 	private String usuario;
