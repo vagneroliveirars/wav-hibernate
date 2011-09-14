@@ -1,9 +1,11 @@
 package br.com.caelum.fj26;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 
 /**
  * Classe que representa a entidade Funcionario
@@ -15,7 +17,9 @@ import javax.persistence.Id;
 public class Funcionario {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@SequenceGenerator(name="FUNCIONARIO_ID", sequenceName="FUNCIONARIO_SEQ" , allocationSize=1)
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="FUNCIONARIO_ID")
+	@Column(name="ID")
 	private Long id;
 	private String nome;
 	private String usuario;
