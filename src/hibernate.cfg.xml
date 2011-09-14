@@ -12,5 +12,6 @@ DTD//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 		<property name="hibernate.format_sql">true</property>
 		
 		<mapping class="br.com.caelum.fj26.Funcionario" />
+		<mapping class="br.com.caelum.fj26.Produto"/>
 	</session-factory>
 </hibernate-configuration>
