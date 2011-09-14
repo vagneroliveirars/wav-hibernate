@@ -3,14 +3,13 @@ package br.com.caelum.fj26;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.hibernate.cfg.AnnotationConfiguration;
 import org.hibernate.cfg.Configuration;
 
 public class TesteInsere {
 
 	public static void main(String[] args) {
 
-		Configuration configuration = new AnnotationConfiguration();
+		Configuration configuration = new Configuration();
 		configuration.configure();
 
 		SessionFactory sf = configuration.buildSessionFactory();
