@@ -13,5 +13,7 @@ DTD//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 		
 		<mapping class="br.com.caelum.fj26.Funcionario" />
 		<mapping class="br.com.caelum.fj26.Produto"/>
+		<mapping class="br.com.caelum.fj26.Fornecedor"/>
+		<mapping class="br.com.caelum.fj26.ContaPagar"/>
 	</session-factory>
 </hibernate-configuration>
