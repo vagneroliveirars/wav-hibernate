@@ -7,6 +7,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 
+/**
+ * Classe que representa a entidade Produto
+ * 
+ * @author vagner
+ * 
+ */
 @Entity
 public class Produto {
 
