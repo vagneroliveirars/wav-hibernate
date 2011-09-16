@@ -7,7 +7,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 /**
- * Classe que retorna sessões
+ * Classe que retorna sessoes
  * 
  * @author vagner
  * 
