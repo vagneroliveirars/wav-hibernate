@@ -3,6 +3,7 @@ package br.com.caelum.fj26;
 import java.util.List;
 
 import org.hibernate.Criteria;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.criterion.Criterion;
 import org.hibernate.criterion.Order;
@@ -51,6 +52,12 @@ public class FuncionarioDao extends Dao<Funcionario> {
 		Criterion c3 = Restrictions.or(c1, c2);
 		c.add(c3);
 		return c.list();
+	}
+	
+	public long contaRegistros() {
+		Query q = getSession().createQuery("select count(*) from "
+				+ Funcionario.class.getName());
+		return (Long) q.uniqueResult();
 	}
 
 }
