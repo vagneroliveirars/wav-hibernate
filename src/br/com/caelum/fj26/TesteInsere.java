@@ -17,7 +17,7 @@ public class TesteInsere {
 
 		Funcionario f = new Funcionario();
 		f.setNome("Vagner Silva Oliveira");
-		f.setEmail("soliveira.vagner@gmail.com");
+		f.setEmail("vagner.oliveirars@gmail.com");
 		f.setUsuario("vagner");
 		f.setSenha("abcde");
 
